@@ -1,3 +1,5 @@
+// TUGAS 7
+
 alert("Selamat datang di Didesain in!!")
 
 const namaUmkm = "Didesain in";
@@ -12,3 +14,4 @@ const layananDigital = 2;
 const layananCetak = 2;
 console.log("Jumlah Layanan Digital: ", layananDigital)
 console.log("Jumlah Layanan Cetak: ", layananCetak)
+

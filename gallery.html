@@ -98,6 +98,45 @@
                     </p>
                 </div>
             </section>
+
+            <section>
+                <h2>Cek Kategori Usia</h2>
+                <label for="usia">Masukan Usia Kamu: </label>
+                <br>
+                <input type="number" id="usia" placeholder="Contoh: 20">
+                <br>
+                <br>
+                <button onclick="cekUsia()">Cek Kategori</button>
+                <p id="hasilUsia"></p>
+            </section>
+
+            <section>
+                <h2>Testimoni Pelanggan</h2>
+                <div id="daftarTestimoni"></div>
+            </section>
+
+            <section>
+                <h2>Hitung Total Belanja</h2>
+                <form onsubmit="tampilkanTotal(event)">
+                    <label>
+                        Pilih Layanan:
+                    </label>
+                    <select id="layanan">
+                        <option value="35000">Feed & Story - Rp35.000</option>
+                        <option value="40000">Poster & Banner - Rp40.000</option>
+                        <option value="45000">Pamflet & Brosur - Rp45.000</option>
+                        <option value="50000">MMT / Spanduk - Rp50.000</option>
+                    </select>
+
+                    <label>
+                        Jumlah:
+                    </label>
+                    <input type="number" id="jumlah" value="1" min="1">
+
+                    <button type="submit">Hitung Total</button>
+                </form>
+                <p id="hasilTotal"></p>
+            </section>
         </div>
 
         <aside class="sidebar">
@@ -126,6 +165,7 @@
             </section>
         </aside>
     </main>
+    <script src="gallery.js"></script>
     <!-- Footer -->
     <footer>
         <p>
