@@ -59,10 +59,13 @@
             <!-- Form Kontak -->
             <section>
                 <h2>Form Kontak / Pemesanan</h2>
-                <form>
-                    Nama : <input type="text" name="nama">
+                <form id="formKontak" onsubmit="kirimPesan(event)">
+                    Nama : <input type="text" id="nama" name="nama">
                     <br>
-                    Email : <input type="text" name="email">
+                    Email : <input type="text" id="email" name="email">
+                    <br>
+                    Nomor HP : <input type="text" id="noHp" placeholder="Contoh: 081234567890"
+                        oninput="this.value = this.value.replace(/[^0-9]/g, '')">
                     <br>
                     Jenis Kelamin :
                     <input type="radio" name="jk" value="laki-laki"> Laki-Laki
@@ -85,10 +88,12 @@
                     </select>
                     <br>
                     Pesan / Kebutuhan Desain Anda :
-                    <textarea name="pesan"></textarea>
+                    <textarea id="pesan" name="pesan"></textarea>
                     <br>
                     <input type="submit" value="Kirim Pesan">
+                    <button type="button" onclick="clearData()">Clear Data</button>
                 </form>
+                <p id="pesanForm"></p>
             </section>
         </div>
 
@@ -118,7 +123,7 @@
             </section>
         </aside>
     </main>
-
+    <script src="contact.js"></script>
     <!-- Footer -->
     <footer>
         <p>

@@ -266,6 +266,19 @@ form input[type="submit"]:hover {
     font-size: 0.95rem;
 }
 
+#pesanForm {
+    color: #1a7a2e;
+    background-color: #e6f4ea;
+    border: 1px solid #a3d9a5;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 12px;
+}
+
+#pesanForm:empty {
+    display: none;
+}
+
 @media (max-width: 768px) {
     .layout {
         flex-direction: column;
