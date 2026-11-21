@@ -1,6 +1,7 @@
 // TUGAS 7
 
 alert("Selamat datang di Didesain in!!")
+alert("Didesain In melayani logo, poster, dan konten media sosial.");
 
 const namaUmkm = "Didesain in";
 console.log("Nama Umkm: ", namaUmkm);

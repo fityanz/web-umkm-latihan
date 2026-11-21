@@ -22,7 +22,7 @@ function cekUsia() {
         hasil = "Anak - Anak";
     } else if (usia <= 17) {
         hasil = "Remaja";
-    } else if (usia <= 30) {
+    } else if (usia <= 60) {
         hasil = "Dewasa";
     } else {
         hasil = "Lansia";
@@ -33,14 +33,14 @@ function cekUsia() {
 
 // INI JS TESTIMONI
 const testimoni = [
-    {nama: "Alya", pesan: "Ayam geprek 1"},
-    {nama: "Budi", pesan: "Seblak Ceker Ekstra Telor 1"},
-    {nama: "Candra", pesan: "Enak tuh Americano, 1 dong"},
-    {nama: "Doni", pesan: "WOO YA BOLEH"},
-    {nama: "Embul", pesan: "Yah gula neh wes"}
+    { nama: "Alya", pesan: "Desain logonya bagus, sesuai yang aku mau." },
+    { nama: "Budi", pesan: "Pengerjaannya cepat, hasilnya rapi." },
+    { nama: "Candra", pesan: "Poster buat promosi jualanku jadi lebih menarik." },
+    { nama: "Doni", pesan: "Adminnya ramah, revisinya juga cepat." },
+    { nama: "Embul", pesan: "Harga bersahabat buat UMKM kecil seperti aku." }
 ]
 const wadahTestimoni = document.getElementById("daftarTestimoni");
-testimoni.forEach(function(t) {
+testimoni.forEach(function (t) {
     wadahTestimoni.innerHTML += `<p>"${t.pesan}"<br><strong>- ${t.nama}</strong></p>`;
 })
 
